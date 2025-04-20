@@ -1,13 +1,31 @@
 {
   "files": {
-    "main.css": "/tzb/static/css/main.5fa346fa.css",
-    "main.js": "/tzb/static/js/main.d4c9bc54.js",
+    "main.css": "/tzb/static/css/main.9d7a8770.css",
+    "main.js": "/tzb/static/js/main.436597ad.js",
+    "static/media/Tomorrow-ExtraBoldItalic.ttf": "/tzb/static/media/Tomorrow-ExtraBoldItalic.f6d45eea01a0b32c8df1.ttf",
+    "static/media/Tomorrow-SemiBoldItalic.ttf": "/tzb/static/media/Tomorrow-SemiBoldItalic.b6849a64865b3917331a.ttf",
+    "static/media/Tomorrow-LightItalic.ttf": "/tzb/static/media/Tomorrow-LightItalic.9950b7c631b8e8c4b1c6.ttf",
+    "static/media/Tomorrow-ExtraLightItalic.ttf": "/tzb/static/media/Tomorrow-ExtraLightItalic.af7ad3ae925457dd9989.ttf",
+    "static/media/Tomorrow-BoldItalic.ttf": "/tzb/static/media/Tomorrow-BoldItalic.e56c5c78c63fa4816019.ttf",
+    "static/media/Tomorrow-Italic.ttf": "/tzb/static/media/Tomorrow-Italic.f47718e99ac0ac37b609.ttf",
+    "static/media/Tomorrow-MediumItalic.ttf": "/tzb/static/media/Tomorrow-MediumItalic.486a3bf882cc8bd6b400.ttf",
+    "static/media/Tomorrow-ThinItalic.ttf": "/tzb/static/media/Tomorrow-ThinItalic.11f607e75736447ad466.ttf",
+    "static/media/Tomorrow-Light.ttf": "/tzb/static/media/Tomorrow-Light.6e3d3e389de9cb57613b.ttf",
+    "static/media/Tomorrow-ExtraLight.ttf": "/tzb/static/media/Tomorrow-ExtraLight.111dd621c03c0f978e98.ttf",
+    "static/media/Tomorrow-ExtraBold.ttf": "/tzb/static/media/Tomorrow-ExtraBold.d9ad8e0184538469c267.ttf",
+    "static/media/Tomorrow-SemiBold.ttf": "/tzb/static/media/Tomorrow-SemiBold.ce153f1a0670e9ca1004.ttf",
+    "static/media/Tomorrow-Regular.ttf": "/tzb/static/media/Tomorrow-Regular.2542f093e1f1d0812d57.ttf",
+    "static/media/Tomorrow-Medium.ttf": "/tzb/static/media/Tomorrow-Medium.f220ed1823dfc351e90f.ttf",
+    "static/media/Tomorrow-Bold.ttf": "/tzb/static/media/Tomorrow-Bold.efce0cc51869e4a8abd6.ttf",
+    "static/media/Tomorrow-BlackItalic.ttf": "/tzb/static/media/Tomorrow-BlackItalic.6ddd09e893099d9d4805.ttf",
+    "static/media/Tomorrow-Thin.ttf": "/tzb/static/media/Tomorrow-Thin.0921032a33184f78bba7.ttf",
+    "static/media/Tomorrow-Black.ttf": "/tzb/static/media/Tomorrow-Black.1222b318878f08e886f4.ttf",
     "index.html": "/tzb/index.html",
-    "main.5fa346fa.css.map": "/tzb/static/css/main.5fa346fa.css.map",
-    "main.d4c9bc54.js.map": "/tzb/static/js/main.d4c9bc54.js.map"
+    "main.9d7a8770.css.map": "/tzb/static/css/main.9d7a8770.css.map",
+    "main.436597ad.js.map": "/tzb/static/js/main.436597ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fa346fa.css",
-    "static/js/main.d4c9bc54.js"
+    "static/css/main.9d7a8770.css",
+    "static/js/main.436597ad.js"
   ]
 }
