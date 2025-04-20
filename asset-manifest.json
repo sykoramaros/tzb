@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tzb/static/css/main.9d7a8770.css",
+    "main.css": "/tzb/static/css/main.2051fa42.css",
     "main.js": "/tzb/static/js/main.436597ad.js",
     "static/media/Tomorrow-ExtraBoldItalic.ttf": "/tzb/static/media/Tomorrow-ExtraBoldItalic.f6d45eea01a0b32c8df1.ttf",
     "static/media/Tomorrow-SemiBoldItalic.ttf": "/tzb/static/media/Tomorrow-SemiBoldItalic.b6849a64865b3917331a.ttf",
@@ -21,11 +21,11 @@
     "static/media/Tomorrow-Thin.ttf": "/tzb/static/media/Tomorrow-Thin.0921032a33184f78bba7.ttf",
     "static/media/Tomorrow-Black.ttf": "/tzb/static/media/Tomorrow-Black.1222b318878f08e886f4.ttf",
     "index.html": "/tzb/index.html",
-    "main.9d7a8770.css.map": "/tzb/static/css/main.9d7a8770.css.map",
+    "main.2051fa42.css.map": "/tzb/static/css/main.2051fa42.css.map",
     "main.436597ad.js.map": "/tzb/static/js/main.436597ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d7a8770.css",
+    "static/css/main.2051fa42.css",
     "static/js/main.436597ad.js"
   ]
 }
