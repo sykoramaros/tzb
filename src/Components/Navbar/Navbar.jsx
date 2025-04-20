@@ -1,61 +1,107 @@
-import React from "react";
+import React, { useState } from "react"
+import "./Navbar.css"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
-    return (
-        <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-gray fib-h-5">
-                <div className="container-fluid position-relative">
-                    <a className="navbar-brand position-absolute" href="#">
-                        <img src={`${process.env.PUBLIC_URL}/img/logo.png`}
-                             alt="TZB Orlová" className="fib-h-8 fib-mt-5"
-                        />
-                    </a>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="ms-auto navbar-nav fib-font-2 fib-gap-1">
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">Home</a>
-                            </li>
-                            <span className="navbar-text">|</span>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Statické</a>
-                            </li>
-                            <span className="navbar-text">|</span>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Mobilní</a>
-                            </li>
-                            <span className="navbar-text">|</span>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Monitoring</a>
-                            </li>
-                            <span className="navbar-text">|</span>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Kontakty</a>
-                            </li>
-                        </ul>
-                        {/*<button className="navbar-toggler" type="button" data-bs-toggle="collapse"*/}
-                        {/*        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"*/}
-                        {/*        aria-label="Toggle navigation">*/}
-                        {/*    <span className="navbar-toggler-icon"></span>*/}
-                        {/*</button>*/}
-                    </div>
-                    <div className="btn-group fib-ms-5">
-                        <button className="btn bg-light-gray dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                            LANG
-                        </button>
-                        <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">ENG</a></li>
-                            <li><a className="dropdown-item" href="#">CZE</a></li>
-                            <li><a className="dropdown-item" href="#">RUS</a></li>
-                        </ul>
-                    </div>
-                    <button type="button"
-                            className="d-block d-lg-none btn btn-outline-light fib-w-3 fib-h-3">+
-                    </button>
-                </div>
-            </nav>
-        </>
-    )
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen)
+  }
+
+  return (
+    <>
+      <nav className="navbar bg-gray h-5 d-flex justify-content-between align-items-center rounded-bottom-4 top-0 left-0 z-3 w-100 position-fixed">
+        <div>
+          <Link to="/" className="logo-img">
+            <img
+              className="h-3"
+              src={`${process.env.PUBLIC_URL}/img/logo.png`}
+              alt="TZB Orlová"
+            />
+          </Link>
+        </div>
+
+        <ul
+          className={`navbar-menu ${
+            isOpen ? "open" : ""
+          } gap-3 my-auto d-md-flex`}
+        >
+          <li className="navbar-item font-3 fw-medium my-auto">
+            <Link to="/" className="text-white">
+              Home
+            </Link>
+          </li>
+          <span className=" d-none d-md-block font-3 my-auto text-white">
+            |
+          </span>
+          <li className="navbar-item font-3 fw-medium my-auto">
+            <Link to="/static" className="text-white">
+              Statické
+            </Link>
+          </li>
+          <span className=" d-none d-md-block font-3 my-auto text-white">
+            |
+          </span>
+          <li className="navbar-item font-3 fw-medium my-auto">
+            <Link to="/mobile" className="text-white">
+              Mobilní
+            </Link>
+          </li>
+          <span className=" d-none d-md-block font-3 my-auto text-white">
+            |
+          </span>
+          <li className="navbar-item font-3 fw-medium my-auto">
+            <Link to="/monitoring" className="text-white">
+              Monitoring
+            </Link>
+          </li>
+          <span className="d-none d-md-block font-3 my-auto text-white">|</span>
+          <li className="navbar-item font-3 fw-medium my-auto">
+            <Link to="/contact" className="text-white">
+              Kontakty
+            </Link>
+          </li>
+        </ul>
+
+        <div className="lang-container btn-group bg-light-gray rounded-4 my-auto">
+          <button
+            className="btn dropdown-toggle gray font-2 my-auto"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            LANG
+          </button>
+          <ul className="dropdown-menu">
+            <li>
+              <Link to="/" className="dropdown-item gray">
+                ENG
+              </Link>
+            </li>
+            <li>
+              <Link to="/cz" className="dropdown-item gray">
+                CZE
+              </Link>
+            </li>
+            <li>
+              <Link to="/ru" className="dropdown-item gray">
+                RUS
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          className="navbar-toggle bg-gray d-md-none h-5 w-5 font-8 position-fixed top-0 end-0"
+          onClick={toggleMenu}
+          aria-label="Menu"
+        >
+          ☰
+        </button>
+      </nav>
+    </>
+  )
 }
 
 export default Navbar

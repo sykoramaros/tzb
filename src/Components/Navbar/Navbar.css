@@ -1,0 +1,54 @@
+.logo-img {
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  cursor: pointer;
+}
+
+.navbar-toggle {
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  z-index: 5;
+  display: none;
+  flex-direction: row;
+}
+
+.navbar-menu.open {
+  padding: 10px;
+  display: flex;
+  position: absolute;
+  top: 95%;
+  left: 0;
+  flex-direction: column;
+  background-color: #656565;
+  width: 100%;
+}
+
+.navbar-item a {
+  text-decoration: none;
+}
+
+.navbar-item {
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-item:hover {
+  transform: scale(1.618);
+}
+
+.lang-container {
+  display: block;
+  margin-right: 1%;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .lang-container {
+    display: block;
+    margin-right: 20%;
+  }
+}
