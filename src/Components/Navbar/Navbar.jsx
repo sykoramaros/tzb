@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar bg-gray h-5 d-flex justify-content-between align-items-center rounded-bottom-4 top-0 left-0 z-3 w-100 position-fixed">
+      <nav className="navbar bg-gray h-5 d-flex justify-content-evenly align-items-center top-0 left-0 z-3 w-100 position-fixed">
         <div>
           <Link to="/" className="logo-img">
             <img
@@ -25,7 +25,7 @@ const Navbar = () => {
         <ul
           className={`navbar-menu ${
             isOpen ? "open" : ""
-          } gap-3 my-auto d-md-flex`}
+          } gap-3 gap-lg-4 my-auto d-md-flex`}
         >
           <li className="navbar-item font-3 fw-medium my-auto">
             <Link to="/" className="text-white">
@@ -58,7 +58,7 @@ const Navbar = () => {
           </li>
           <span className="d-none d-md-block font-3 my-auto text-white">|</span>
           <li className="navbar-item font-3 fw-medium my-auto">
-            <Link to="/contact" className="text-white">
+            <Link to="/contacts" className="text-white">
               Kontakty
             </Link>
           </li>
@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
 
         <button
-          className="navbar-toggle bg-gray d-md-none h-5 w-5 font-8 position-fixed top-0 end-0"
+          className="navbar-toggle bg-transparent d-md-none h-5 w-5 font-8 position-fixed top-0 end-0"
           onClick={toggleMenu}
           aria-label="Menu"
         >
