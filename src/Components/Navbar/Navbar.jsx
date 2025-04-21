@@ -11,11 +11,11 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar bg-gray h-5 d-flex justify-content-evenly align-items-center top-0 left-0 z-3 w-100 position-fixed">
+      <nav className="navbar bg-gray d-flex justify-content-evenly align-items-center w-100 py-1">
         <div>
           <Link to="/" className="logo-img">
             <img
-              className="h-3"
+              className="w-8"
               src={`${process.env.PUBLIC_URL}/img/logo.png`}
               alt="TZB Orlová"
             />
@@ -27,44 +27,44 @@ const Navbar = () => {
             isOpen ? "open" : ""
           } gap-3 gap-lg-4 my-auto d-md-flex`}
         >
-          <li className="navbar-item font-3 fw-medium my-auto">
+          <li className="navbar-item font-5 fw-medium my-auto">
             <Link to="/" className="text-white">
               Home
             </Link>
           </li>
-          <span className=" d-none d-md-block font-3 my-auto text-white">
+          <span className=" d-none d-lg-block font-5 my-auto text-white">
             |
           </span>
-          <li className="navbar-item font-3 fw-medium my-auto">
+          <li className="navbar-item font-5 fw-medium my-auto">
             <Link to="/static" className="text-white">
               Statické
             </Link>
           </li>
-          <span className=" d-none d-md-block font-3 my-auto text-white">
+          <span className=" d-none d-lg-block font-5 my-auto text-white">
             |
           </span>
-          <li className="navbar-item font-3 fw-medium my-auto">
+          <li className="navbar-item font-5 fw-medium my-auto">
             <Link to="/mobile" className="text-white">
               Mobilní
             </Link>
           </li>
-          <span className=" d-none d-md-block font-3 my-auto text-white">
+          <span className=" d-none d-lg-block font-5 my-auto text-white">
             |
           </span>
-          <li className="navbar-item font-3 fw-medium my-auto">
+          <li className="navbar-item font-5 fw-medium my-auto">
             <Link to="/monitoring" className="text-white">
               Monitoring
             </Link>
           </li>
-          <span className="d-none d-md-block font-3 my-auto text-white">|</span>
-          <li className="navbar-item font-3 fw-medium my-auto">
+          <span className="d-none d-lg-block font-5 my-auto text-white">|</span>
+          <li className="navbar-item font-5 fw-medium my-auto">
             <Link to="/contacts" className="text-white">
               Kontakty
             </Link>
           </li>
         </ul>
 
-        <div className="lang-container btn-group bg-light-gray rounded-4 my-auto">
+        {/* <div className="lang-container btn-group bg-light-gray rounded-4 my-auto">
           <button
             className="btn dropdown-toggle gray font-2 my-auto"
             type="button"
@@ -90,10 +90,10 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
         <button
-          className="navbar-toggle bg-transparent d-md-none h-5 w-5 font-8 position-fixed top-0 end-0"
+          className="navbar-toggle bg-transparent d-md-none font-8 fw-bolder ms-auto me-1"
           onClick={toggleMenu}
           aria-label="Menu"
         >

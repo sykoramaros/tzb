@@ -2,18 +2,19 @@ import React from "react"
 import { Outlet } from "react-router-dom"
 import Navbar from "../Navbar/Navbar"
 import Footer from "../Footer/Footer"
-import "./Layout.css"
 
 const Layout = () => {
   return (
     <>
-      <div className="navbar-container">
+      <div>
         <Navbar />
       </div>
-      <div className="layout-container">
+      <div style={{ minHeight: "100vh" }}>
         <Outlet />
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </>
   )
 }
