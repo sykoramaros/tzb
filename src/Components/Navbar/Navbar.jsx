@@ -32,13 +32,49 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <span className=" d-none d-lg-block font-5 my-auto text-white">
-            |
-          </span>
-          <li className="navbar-item font-5 fw-medium my-auto">
-            <Link to="/static" className="text-white">
+          <span className="d-none d-lg-block font-5 my-auto text-white">|</span>
+          <li className="nav-item font-5 fw-medium my-auto dropdown">
+            <Link
+              className="nav-link dropdown-toggle text-white"
+              to="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Statické
             </Link>
+            <ul className="dropdown-menu">
+              <li>
+                <Link
+                  className="dropdown-item fw-medium font-3 gray"
+                  to="/static"
+                >
+                  Kotelny
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item fw-medium font-3 gray" to="#">
+                  Výměníkové stanice
+                </Link>
+              </li>
+              <li>
+                <Link className="dropdown-item fw-medium font-3 gray" to="#">
+                  Vzduchotechnika
+                </Link>
+              </li>
+              <li></li>
+              <li>
+                <Link className="dropdown-item fw-medium font-3 gray" to="#">
+                  Kogenerace
+                </Link>
+              </li>
+              <hr className="dropdown-divider" />
+              <li>
+                <Link className="dropdown-item fw-medium font-3 green" to="#">
+                  Projekce
+                </Link>
+              </li>
+            </ul>
           </li>
           <span className=" d-none d-lg-block font-5 my-auto text-white">
             |

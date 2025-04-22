@@ -16,14 +16,10 @@ const Carousel = ({ picture }) => {
               className={`carousel-item ${index === 0 ? "active" : ""}`}
               key={index}
             >
-              <span className="ms-2 mt-1 px-2 bg-white text-black bg-opacity-50 font-5 fw-medium rounded-1 position-absolute top-0 start-0">
+              <span className="ms-2 mt-1 px-2 bg-white text-black bg-opacity-75 font-5 fw-medium rounded-1 position-absolute top-0 start-0">
                 {pic.text}
               </span>
-              <img
-                src={pic.src}
-                className="carousel-img d-block mx-auto w-100 img-fluid"
-                alt={pic.alt}
-              />
+              <img src={pic.src} className="carousel-img" alt={pic.alt} />
             </div>
           ))}
         </div>
