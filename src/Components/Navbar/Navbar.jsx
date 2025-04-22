@@ -21,7 +21,6 @@ const Navbar = () => {
             />
           </Link>
         </div>
-
         <ul
           className={`navbar-menu ${
             isOpen ? "open" : ""
@@ -46,31 +45,43 @@ const Navbar = () => {
             <ul className="dropdown-menu">
               <li>
                 <Link
-                  className="dropdown-item fw-medium font-3 gray"
-                  to="/static"
+                  className="dropdown-item fw-medium font-5 gray"
+                  to="/stationary-boiler"
                 >
                   Kotelny
                 </Link>
               </li>
               <li>
-                <Link className="dropdown-item fw-medium font-3 gray" to="#">
+                <Link
+                  className="dropdown-item fw-medium font-5 gray"
+                  to="/stationary-heat-exchanger-station"
+                >
                   Výměníkové stanice
                 </Link>
               </li>
               <li>
-                <Link className="dropdown-item fw-medium font-3 gray" to="#">
+                <Link
+                  className="dropdown-item fw-medium font-5 gray"
+                  to="/air-handling"
+                >
                   Vzduchotechnika
                 </Link>
               </li>
               <li></li>
               <li>
-                <Link className="dropdown-item fw-medium font-3 gray" to="#">
+                <Link
+                  className="dropdown-item fw-medium font-5 gray"
+                  to="/cogeneration"
+                >
                   Kogenerace
                 </Link>
               </li>
               <hr className="dropdown-divider" />
               <li>
-                <Link className="dropdown-item fw-medium font-3 green" to="#">
+                <Link
+                  className="dropdown-item fw-medium font-5 green"
+                  to="/project"
+                >
                   Projekce
                 </Link>
               </li>
@@ -129,7 +140,7 @@ const Navbar = () => {
         </div> */}
 
         <button
-          className="navbar-toggle bg-transparent d-md-none font-8 fw-bolder ms-auto me-1"
+          className="navbar-toggle bg-transparent d-md-none font-13 fw-bolder ms-auto"
           onClick={toggleMenu}
           aria-label="Menu"
         >

@@ -4,7 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 import Layout from "./Components/Layout/Layout"
 import Home from "./Pages/Home/Home"
-import Static from "./Pages/Static/Static"
+import Stationary_Boiler from "./Pages/Stationary_Boiler/Stationary_Boiler"
+import Stationary_Heat_Exchanger_Station from "./Pages/Stationary_Heat_Exchanger_Station/Stationary_Heat_Exchanger_Station"
+import Air_Handling from "./Pages/Air_Handling/Air_Handling"
+import Cogeneration from "./Pages/Cogeneration/Cogeneration"
+import Project from "./Pages/Project/Project"
 import Mobile from "./Pages/Mobile/Mobile"
 import Monitoring from "./Pages/Monitoring/Monitoring"
 import Contacts from "./Pages/Contacts/Contacts"
@@ -18,7 +22,14 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="/static" element={<Static />} />
+            <Route path="/stationary-boiler" element={<Stationary_Boiler />} />
+            <Route
+              path="/stationary-heat-exchanger-station"
+              element={<Stationary_Heat_Exchanger_Station />}
+            />
+            <Route path="/air-handling" element={<Air_Handling />} />
+            <Route path="/cogeneration" element={<Cogeneration />} />
+            <Route path="/project" element={<Project />} />
             <Route path="/mobile" element={<Mobile />} />
             <Route path="/monitoring" element={<Monitoring />} />
             <Route path="/contacts" element={<Contacts />} />

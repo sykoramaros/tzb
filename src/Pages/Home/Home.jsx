@@ -48,7 +48,7 @@ const Home = () => {
         <Title title={title} />
       </div>
       <div
-        className="mx-auto h-21 bg-light-gray"
+        className="mx-auto h-34 bg-light-gray"
         style={{ overflow: "hidden" }}
       >
         <Carousel picture={pictures} />

@@ -6,7 +6,7 @@ const Linked_Tertiary_Heading = ({ linked_tertiary_heading }) => {
     <>
       <div>
         <h3 className="text-center font-8 fw-normal">
-          <Link to="/try" className="text-decoration-none green">
+          <Link to="/project" className="text-decoration-none green">
             {linked_tertiary_heading}
           </Link>
         </h3>

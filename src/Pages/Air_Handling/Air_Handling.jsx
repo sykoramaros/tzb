@@ -4,9 +4,9 @@ import Subtitle from "../../Components/Subtitle/Subtitle"
 import Carousel from "../../Components/Carousel/Carousel"
 import Linked_Tertiary_Heading from "../../Components/Linked_Tertiary_Heading/Linked_Tertiary_Heading"
 
-const Static = () => {
+const Air_Handling = () => {
   const title = "Statické"
-  const subtitle = "Kotelny"
+  const subtitle = "Vzduchotechnika"
   const linked_tertiary_heading = "Projekce"
 
   const pictures = [
@@ -48,4 +48,4 @@ const Static = () => {
   )
 }
 
-export default Static
+export default Air_Handling
