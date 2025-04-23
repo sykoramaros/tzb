@@ -11,11 +11,11 @@ const Mobile = () => {
 
   const pictures = [
     {
-      src: `${process.env.PUBLIC_URL}/img/main_vyroba-a-pronajem-mobilnich-kotelen.png`,
+      src: `https://placehold.co/600x400`,
       text: "Výroba a pronájem mobilních kotelen",
     },
     {
-      src: `${process.env.PUBLIC_URL}/img/TND_kotelna-2-x-3t-pary-scaled.jpg`,
+      src: `https://placehold.co/600x400@2x.png`,
       text: "TND kotelna",
     },
     {
