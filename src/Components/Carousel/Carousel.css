@@ -3,6 +3,8 @@
   height: 100%; /* nebo jiná požadovaná výška */
   object-fit: cover;
   object-position: center;
+  background-color: #257e88;
+  border: 1px solid #ffffff;
 }
 
 .carousel-container {
