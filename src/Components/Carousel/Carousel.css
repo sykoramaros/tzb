@@ -4,7 +4,7 @@
   object-fit: cover;
   object-position: center;
   background-color: #257e88;
-  border: 1px solid #ffffff;
+  /* border: 1px solid #ffffff; */
 }
 
 .carousel-container {
