@@ -74,7 +74,7 @@ const Mobile = () => {
 
   return (
     <>
-      <div className="bg-light-gray pb-1">
+      <div className="">
         <Title title={title} />
       </div>
       <div className="pb-1">

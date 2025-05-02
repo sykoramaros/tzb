@@ -68,30 +68,30 @@ const Project = () => {
 
   return (
     <>
-      <div className="bg-light-gray pb-1">
+      <div className="">
         <Title title={title} />
       </div>
-      <div className="pb-5">
+      <div className="">
         <Subtitle subtitle={subtitle} />
       </div>
-      <div className="container-fluid px-8 pb-13">
-        <div className="">
+      <div className="container px-3 my-5">
+        <div className="my-5">
           <Right_Picture_Article {...article1} />
         </div>
-        <hr className="my-8" />
-        <div className="">
+        <hr className="" />
+        <div className="my-5">
           <Left_Picture_Article {...article2} />
         </div>
-        <hr className="my-8" />
-        <div className="">
+        <hr className="" />
+        <div className="my-5">
           <Right_Picture_Article {...article3} />
         </div>
-        <hr className="my-8" />
-        <div className="">
+        <hr className="" />
+        <div className="my-5">
           <Left_Picture_List {...list1} />
         </div>
-        <hr className="my-8" />
-        <div className="">
+        <hr className="" />
+        <div className="my-5">
           <Right_Picture_List {...list1} />
         </div>
       </div>

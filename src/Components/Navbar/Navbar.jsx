@@ -11,28 +11,30 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar bg-gray d-flex justify-content-evenly align-items-center w-100 py-1">
+      <nav className="navbar-container d-flex justify-content-evenly align-items-center w-100 py-2">
         <div>
           <Link to="/" className="logo-img">
             <img
-              className="w-8"
+              className=""
               src={`${process.env.PUBLIC_URL}/img/logo.png`}
               alt="TZB Orlová"
+              width="110"
+              height="auto"
             />
           </Link>
         </div>
         <ul
           className={`navbar-menu ${
             isOpen ? "open" : ""
-          } gap-3 gap-lg-4 my-auto d-md-flex`}
+          } gap-3 gap-lg-4 my-auto d-md-flex fs-3`}
         >
-          <li className="navbar-item font-5 fw-medium my-auto">
+          <li className="navbar-item  fw-medium my-auto">
             <Link to="/" className="text-white">
               Home
             </Link>
           </li>
-          <span className="d-none d-lg-block font-5 my-auto text-white">|</span>
-          <li className="nav-item font-5 fw-medium my-auto dropdown">
+          <span className="d-none d-lg-block  my-auto text-white">|</span>
+          <li className="nav-item  fw-medium my-auto dropdown">
             <Link
               className="nav-link dropdown-toggle text-white"
               to="#"
@@ -42,10 +44,10 @@ const Navbar = () => {
             >
               Statické
             </Link>
-            <ul className="dropdown-menu">
+            <ul className="dropdown-menu fs-4">
               <li>
                 <Link
-                  className="dropdown-item fw-medium font-5 gray"
+                  className="dropdown-item fw-medium  gray"
                   to="/stationary-boiler"
                 >
                   Kotelny
@@ -53,7 +55,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  className="dropdown-item fw-medium font-5 gray"
+                  className="dropdown-item fw-medium  gray"
                   to="/stationary-heat-exchanger-station"
                 >
                   Výměníkové stanice
@@ -61,7 +63,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  className="dropdown-item fw-medium font-5 gray"
+                  className="dropdown-item fw-medium  gray"
                   to="/air-handling"
                 >
                   Vzduchotechnika
@@ -70,7 +72,7 @@ const Navbar = () => {
               <li></li>
               <li>
                 <Link
-                  className="dropdown-item fw-medium font-5 gray"
+                  className="dropdown-item fw-medium  gray"
                   to="/cogeneration"
                 >
                   Kogenerace
@@ -78,33 +80,26 @@ const Navbar = () => {
               </li>
               <hr className="dropdown-divider" />
               <li>
-                <Link
-                  className="dropdown-item fw-medium font-5 green"
-                  to="/project"
-                >
+                <Link className="dropdown-item fw-medium  green" to="/project">
                   Projekce
                 </Link>
               </li>
             </ul>
           </li>
-          <span className=" d-none d-lg-block font-5 my-auto text-white">
-            |
-          </span>
-          <li className="navbar-item font-5 fw-medium my-auto">
+          <span className=" d-none d-lg-block  my-auto text-white">|</span>
+          <li className="navbar-item  fw-medium my-auto">
             <Link to="/mobile" className="text-white">
               Mobilní
             </Link>
           </li>
-          <span className=" d-none d-lg-block font-5 my-auto text-white">
-            |
-          </span>
-          <li className="navbar-item font-5 fw-medium my-auto">
+          <span className=" d-none d-lg-block  my-auto text-white">|</span>
+          <li className="navbar-item  fw-medium my-auto">
             <Link to="/monitoring" className="text-white">
               Monitoring
             </Link>
           </li>
-          <span className="d-none d-lg-block font-5 my-auto text-white">|</span>
-          <li className="navbar-item font-5 fw-medium my-auto">
+          <span className="d-none d-lg-block  my-auto text-white">|</span>
+          <li className="navbar-item  fw-medium my-auto">
             <Link to="/contacts" className="text-white">
               Kontakty
             </Link>

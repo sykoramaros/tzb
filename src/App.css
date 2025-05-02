@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --golden-ratio: 1.618;
 
   --font-ratio: 0.3;
@@ -7,10 +7,10 @@
   --font-lg-ratio: 0.5;
   --font-xl-ratio: 0.6;
   --font-xxl-ratio: 0.7;
-}
+} */
 
 html {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 /* html * {
@@ -191,7 +191,7 @@ body {
 }
 
 /* Fibonacci MINIMALNÍ GLOBALNI responzivita */
-.font-55 {
+/* .font-55 {
   font-size: calc(55rem * var(--font-ratio));
 }
 
@@ -814,16 +814,16 @@ body {
 
 .gap-1 {
   gap: 1rem;
-}
+} */
 
 /* Fibonacci SM responzivita */
 
-@media (min-width: 375px) {
-}
+/* @media (min-width: 375px) {
+} */
 
 /* Fibonacci md responzivita */
 
-@media (min-width: 430px) {
+/* @media (min-width: 430px) {
   .font-55 {
     font-size: calc(55rem * var(--font-md-ratio));
   }
@@ -851,11 +851,11 @@ body {
   .font-1 {
     font-size: calc(1rem * var(--font-md-ratio));
   }
-}
+} */
 
 /* Fibonacci lg responzivita */
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .font-55 {
     font-size: calc(55rem * var(--font-lg-ratio));
   }
@@ -883,11 +883,11 @@ body {
   .font-1 {
     font-size: calc(1rem * var(--font-lg-ratio));
   }
-}
+} */
 
 /* Fibonacci xl responzivita */
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .font-55 {
     font-size: calc(55rem * var(--font-xl-ratio));
   }
@@ -915,11 +915,11 @@ body {
   .font-1 {
     font-size: calc(1rem * var(--font-xl-ratio));
   }
-}
+} */
 
 /* Fibonacci xxl responzivita */
 
-@media (min-width: 1280px) {
+/* @media (min-width: 1280px) {
   .font-55 {
     font-size: calc(55rem * var(--font-xxl-ratio));
   }
@@ -947,7 +947,7 @@ body {
   .font-1 {
     font-size: calc(1rem * var(--font-xxl-ratio));
   }
-}
+} */
 
 /* Fibonacci xxxl responzivita */
 

@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer"
 const Layout = () => {
   return (
     <>
-      <div>
+      <div className="sticky-top">
         <Navbar />
       </div>
       <div style={{ minHeight: "100vh" }}>

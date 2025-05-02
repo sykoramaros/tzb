@@ -60,7 +60,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-light-gray pb-1">
+      <div className="">
         <Title title={title} />
       </div>
       <div
@@ -76,7 +76,7 @@ const Home = () => {
         </h2>
 
         <div className="container my-8 px-4 px-sm-0">
-          <div className="row row-cols-2 row-cols-md-3 g-5">
+          <div className="row row-cols-2 row-cols-md-3 g-5 py-5">
             {partnerships.map((partnerships, index) => (
               <div key={index}>
                 <Partnership_Card partnership={partnerships} />

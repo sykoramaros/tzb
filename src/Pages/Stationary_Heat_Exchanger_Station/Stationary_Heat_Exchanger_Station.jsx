@@ -74,7 +74,7 @@ const Stationary_Heat_Exchanger_Station = () => {
 
   return (
     <>
-      <div className="bg-light-gray pb-1">
+      <div className="">
         <Title title={title} />
       </div>
       <div className="pb-1">
