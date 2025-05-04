@@ -18,7 +18,7 @@ const Carousel = ({ picture }) => {
                 className={`carousel-item ${index === 0 ? "active" : ""}`}
                 key={index}
               >
-                <span className="ms-2 mt-1 px-2 bg-white text-black bg-opacity-75 fs-2 fw-medium rounded-1 position-absolute top-0 start-0 z-1">
+                <span className="ms-2 mt-1 me-2 px-2 bg-white text-black bg-opacity-75 fs-2 fw-medium rounded-1 position-absolute top-0 start-0 z-1">
                   {pic.text}
                 </span>
                 <div className="d-flex justify-content-center align-items-center">

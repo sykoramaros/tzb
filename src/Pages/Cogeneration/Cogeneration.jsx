@@ -3,6 +3,7 @@ import Title from "../../Components/Title/Title"
 import Subtitle from "../../Components/Subtitle/Subtitle"
 import Carousel from "../../Components/Carousel/Carousel"
 import Linked_Tertiary_Heading from "../../Components/Linked_Tertiary_Heading/Linked_Tertiary_Heading"
+import Text_Box from "../../Components/Text_Box/Text_Box"
 
 const Cogeneration = () => {
   const title = "Statické"
@@ -23,59 +24,22 @@ const Cogeneration = () => {
     //   text: "Výměník",
     // },
     {
-      src: `${process.env.PUBLIC_URL}/img/800_600.png`,
-      text: "800 x 600",
+      src: `${process.env.PUBLIC_URL}/img/cogeneration_unit_1920_1080.jpg`,
+      text: "KOGENERAČNÍ JEDNOTKA - TYLEX Letovice ",
     },
     {
-      src: `${process.env.PUBLIC_URL}/img/1024_768.png`,
-      text: "1024 x 768",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/1920_1080.png`,
-      text: "1920 x 1080",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/2560_1440.png`,
-      text: "2560 x 1440",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/120_120.png`,
-      text: "120 x 120",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/250_250.png`,
-      text: "250 x 250",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/800_600w.png`,
-      text: "800 x 600w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/1024_768w.png`,
-      text: "1024 x 768w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/1920_1080w.png`,
-      text: "1920 x 1080w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/2560_1440w.png`,
-      text: "2560 x 1440w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/120_120w.png`,
-      text: "120 x 120w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/250_250w.png`,
-      text: "250 x 250w",
+      src: `${process.env.PUBLIC_URL}/img/cogeneration_unit_b_1920_1080.jpg`,
+      text: "MIKRO – KOGENERAČNÍ JEDNOTKA SMO městská a.s.",
     },
   ]
+
+  const text =
+    "Zajišťujeme řešení pro kogeneraci – kombinovanou výrobu elektřiny a tepla, která umožňuje efektivní využití paliva a snížení energetických nákladů. Tento způsob výroby je ideální pro objekty s trvalou spotřebou tepla a přispívá k energetické soběstačnosti a ekologickému provozu."
 
   return (
     <>
       <div className="">
-        <Title title={title} /> 
+        <Title title={title} />
       </div>
       <div className="pb-1">
         <Subtitle subtitle={subtitle} />
@@ -90,6 +54,9 @@ const Cogeneration = () => {
         <Linked_Tertiary_Heading
           linked_tertiary_heading={linked_tertiary_heading}
         />
+      </div>
+      <div className="">
+        <Text_Box text={text} />
       </div>
     </>
   )

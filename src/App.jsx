@@ -9,7 +9,9 @@ import Stationary_Heat_Exchanger_Station from "./Pages/Stationary_Heat_Exchanger
 import Air_Handling from "./Pages/Air_Handling/Air_Handling"
 import Cogeneration from "./Pages/Cogeneration/Cogeneration"
 import Project from "./Pages/Project/Project"
-import Mobile from "./Pages/Mobile/Mobile"
+import Mobile_Water from "./Pages/Mobile_Water/Mobile_Water"
+import Mobile_Steam from "./Pages/Mobile_Steam/Mobile_Steam"
+import Production from "./Pages/Production/Production"
 import Monitoring from "./Pages/Monitoring/Monitoring"
 import Contacts from "./Pages/Contacts/Contacts"
 import Try from "./Pages/Try/Try"
@@ -30,7 +32,9 @@ const App = () => {
             <Route path="/air-handling" element={<Air_Handling />} />
             <Route path="/cogeneration" element={<Cogeneration />} />
             <Route path="/project" element={<Project />} />
-            <Route path="/mobile" element={<Mobile />} />
+            <Route path="/mobile-water" element={<Mobile_Water />} />
+            <Route path="/mobile-steam" element={<Mobile_Steam />} />
+            <Route path="/production" element={<Production />} />
             <Route path="/monitoring" element={<Monitoring />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/try" element={<Try />} />

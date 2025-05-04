@@ -6,8 +6,11 @@ import Linked_Tertiary_Heading from "../../Components/Linked_Tertiary_Heading/Li
 
 const Mobile = () => {
   const title = "Mobilní"
-  const subtitle = "Kotelny"
-  const linked_tertiary_heading = "Projekce"
+  const subtitle = "Parní"
+  const linked_tertiary_heading = {
+    title: "Výroba",
+    link: "/production",
+  }
 
   const pictures = [
     // {
@@ -88,7 +91,8 @@ const Mobile = () => {
       </div>
       <div className="pt-2 pb-5">
         <Linked_Tertiary_Heading
-          linked_tertiary_heading={linked_tertiary_heading}
+          title={linked_tertiary_heading.title}
+          link={linked_tertiary_heading.link}
         />
       </div>
     </>

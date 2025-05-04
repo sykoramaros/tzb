@@ -87,10 +87,43 @@ const Navbar = () => {
             </ul>
           </li>
           <span className=" d-none d-lg-block  my-auto text-white">|</span>
-          <li className="navbar-item  fw-medium my-auto">
-            <Link to="/mobile" className="text-white">
+          <li className="nav-item  fw-medium my-auto dropdown">
+            <Link
+              className="nav-link dropdown-toggle text-white"
+              to="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Mobilní
             </Link>
+            <ul className="dropdown-menu fs-4">
+              <li>
+                <Link
+                  className="dropdown-item fw-medium  gray"
+                  to="/mobile-water"
+                >
+                  Teplovodní
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="dropdown-item fw-medium  gray"
+                  to="/mobile-steam"
+                >
+                  Parní
+                </Link>
+              </li>
+              <hr className="dropdown-divider" />
+              <li>
+                <Link
+                  className="dropdown-item fw-medium  green"
+                  to="/production"
+                >
+                  Výroba
+                </Link>
+              </li>
+            </ul>
           </li>
           <span className=" d-none d-lg-block  my-auto text-white">|</span>
           <li className="navbar-item  fw-medium my-auto">

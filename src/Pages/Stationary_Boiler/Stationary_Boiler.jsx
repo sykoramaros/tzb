@@ -3,6 +3,7 @@ import Title from "../../Components/Title/Title"
 import Subtitle from "../../Components/Subtitle/Subtitle"
 import Carousel from "../../Components/Carousel/Carousel"
 import Linked_Tertiary_Heading from "../../Components/Linked_Tertiary_Heading/Linked_Tertiary_Heading"
+import Text_Box from "../../Components/Text_Box/Text_Box"
 
 const Stationary_Boiler = () => {
   const title = "Statické"
@@ -23,54 +24,17 @@ const Stationary_Boiler = () => {
     //   text: "Výměník",
     // },
     {
-      src: `${process.env.PUBLIC_URL}/img/800_600.png`,
-      text: "800 x 600",
+      src: `${process.env.PUBLIC_URL}/img/gas_boiler_1920_1080.jpg`,
+      text: "PLYNOVÁ PARNÍ KOTELNA PRO MLÉKÁRNU",
     },
     {
-      src: `${process.env.PUBLIC_URL}/img/1024_768.png`,
-      text: "1024 x 768",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/1920_1080.png`,
-      text: "1920 x 1080",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/2560_1440.png`,
-      text: "2560 x 1440",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/120_120.png`,
-      text: "120 x 120",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/250_250.png`,
-      text: "250 x 250",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/800_600w.png`,
-      text: "800 x 600w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/1024_768w.png`,
-      text: "1024 x 768w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/1920_1080w.png`,
-      text: "1920 x 1080w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/2560_1440w.png`,
-      text: "2560 x 1440w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/120_120w.png`,
-      text: "120 x 120w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/250_250w.png`,
-      text: "250 x 250w",
+      src: `${process.env.PUBLIC_URL}/img/monitoring_a_1920_1080.jpg`,
+      text: "PLYNOVÁ TV KOTELNA PRO VYTÁPĚNÍ",
     },
   ]
+
+  const text =
+    "Navrhujeme a realizujeme kotelny různých typů podle potřeb zákazníka – parní, horkovodní, teplovodní i termoolejové. Zaměřujeme se na efektivní provoz, bezpečnost a optimalizaci energetických nákladů."
 
   return (
     <>
@@ -86,11 +50,13 @@ const Stationary_Boiler = () => {
       >
         <Carousel picture={pictures} />
       </div>
-
-      <div className="pt-3 pb-5">
+      <div className="pt-3 pb-4">
         <Linked_Tertiary_Heading
           linked_tertiary_heading={linked_tertiary_heading}
         />
+      </div>
+      <div className="">
+        <Text_Box text={text} />
       </div>
     </>
   )

@@ -3,6 +3,7 @@ import Title from "../../Components/Title/Title"
 import Subtitle from "../../Components/Subtitle/Subtitle"
 import Carousel from "../../Components/Carousel/Carousel"
 import Linked_Tertiary_Heading from "../../Components/Linked_Tertiary_Heading/Linked_Tertiary_Heading"
+import Text_Box from "../../Components/Text_Box/Text_Box"
 
 const Air_Handling = () => {
   const title = "Statické"
@@ -23,54 +24,29 @@ const Air_Handling = () => {
     //   text: "Výměník",
     // },
     {
-      src: `${process.env.PUBLIC_URL}/img/800_600.png`,
-      text: "800 x 600",
+      src: `${process.env.PUBLIC_URL}/img/air_handling_1920_1080.jpg`,
+      text: "SUŠÁRNA MLÉKA",
     },
     {
-      src: `${process.env.PUBLIC_URL}/img/1024_768.png`,
-      text: "1024 x 768",
+      src: `${process.env.PUBLIC_URL}/img/air_handling_b_1920_1080.jpg`,
+      text: "VĚTRÁNÍ ELEKTRÁRNY LEDVICE",
     },
     {
-      src: `${process.env.PUBLIC_URL}/img/1920_1080.png`,
-      text: "1920 x 1080",
+      src: `${process.env.PUBLIC_URL}/img/air_handling_c_1920_1080.jpg`,
+      text: "SUŠÍCÍ PECE - TATRA METALURGIE",
     },
     {
-      src: `${process.env.PUBLIC_URL}/img/2560_1440.png`,
-      text: "2560 x 1440",
+      src: `${process.env.PUBLIC_URL}/img/air_handling_d_1920_1080.jpg`,
+      text: "VYPALOVACÍ PECE - TATRA TRUCKS",
     },
     {
-      src: `${process.env.PUBLIC_URL}/img/120_120.png`,
-      text: "120 x 120",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/250_250.png`,
-      text: "250 x 250",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/800_600w.png`,
-      text: "800 x 600w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/1024_768w.png`,
-      text: "1024 x 768w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/1920_1080w.png`,
-      text: "1920 x 1080w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/2560_1440w.png`,
-      text: "2560 x 1440w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/120_120w.png`,
-      text: "120 x 120w",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/250_250w.png`,
-      text: "250 x 250w",
+      src: `${process.env.PUBLIC_URL}/img/air_handling_e_1920_1080.jpg`,
+      text: "SUŠÍCÍ PECE - TATRA TRUCKS",
     },
   ]
+
+  const text =
+    "Dodáváme a instalujeme vzduchotechnické jednotky včetně přímotopných, nepřímotopných a s rekuperací tepla, zajišťujeme kompletní potrubní rozvody pro efektivní distribuci vzduchu. Součástí našich služeb jsou také přímotopné rotační pece i pece s rekuperací, určené pro náročné provozy s důrazem na účinnost a úsporu energie."
 
   return (
     <>
@@ -91,6 +67,9 @@ const Air_Handling = () => {
         <Linked_Tertiary_Heading
           linked_tertiary_heading={linked_tertiary_heading}
         />
+      </div>
+      <div className="">
+        <Text_Box text={text} />
       </div>
     </>
   )

@@ -12,7 +12,8 @@ const Layout = () => {
       <div style={{ minHeight: "100vh" }}>
         <Outlet />
       </div>
-      <div>
+      <br />
+      <div className="mt-5">
         <Footer />
       </div>
     </>
