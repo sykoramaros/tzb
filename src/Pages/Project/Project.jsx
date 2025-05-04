@@ -13,22 +13,15 @@ const Project = () => {
   const article1 = {
     header: "Studie a projekty",
     paragraph:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit possimus, explicabo modi nostrum beatae expedita alias officiis consequuntur non magnam.",
-    src: `${process.env.PUBLIC_URL}/img/logo.png`,
+      "Zajišťujeme kompletní zpracování studií a projektové dokumentace včetně získání všech potřebných vyjádření od dotčených orgánů a správců sítí. Díky našim zkušenostem a znalosti místních podmínek nabízíme efektivní a spolehlivé řešení pro každý projekt.",
+    src: `${process.env.PUBLIC_URL}/img/scheme_1920_1080.jpg`,
   }
 
   const article2 = {
-    header: "Inženýrská činnost",
+    header: "Povolení",
     paragraph:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit possimus, explicabo modi nostrum beatae expedita alias officiis consequuntur non magnam.",
-    src: `${process.env.PUBLIC_URL}/img/logo.png`,
-  }
-
-  const article3 = {
-    header: "Digitalizace dokumentace",
-    paragraph:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit possimus, explicabo modi nostrum beatae expedita alias officiis consequuntur non magnam.",
-    src: `${process.env.PUBLIC_URL}/img/logo.png`,
+      "Zabezpečujeme veškeré náležitosti potřebné pro získání stavebního povolení, včetně přípravy dokumentace a jednání s příslušnými úřady. Celý proces vyřídíme profesionálně a bez zbytečných průtahů.",
+    src: `${process.env.PUBLIC_URL}/img/projection_1920_1080.jpg`,
   }
 
   const list1 = {
@@ -63,7 +56,29 @@ const Project = () => {
         list_item: "měření na současném stavu (průtoky apod.)",
       },
     ],
-    src: `${process.env.PUBLIC_URL}/img/logo.png`,
+    src: `${process.env.PUBLIC_URL}/img/studies_projects_1920_1080.jpg`,
+  }
+  const list2 = {
+    header: "Digitalizace dokumentace",
+    list: [
+      {
+        list_header: "DWG",
+        list_item: "digitalizace do editovatelného formátu",
+      },
+      {
+        list_header: "PDF",
+        list_item: "digitalizace do pevného formátu (skenování)",
+      },
+      {
+        list_header: "ARCHÍV",
+        list_item: "vytvoření archivní dokumentace včetně členění",
+      },
+      {
+        list_header: "SPRÁVA",
+        list_item: "udržování a průběžná aktualizace dokumentace",
+      },
+    ],
+    src: `${process.env.PUBLIC_URL}/img/archive_documents_1920_1080.jpg`,
   }
 
   return (
@@ -84,15 +99,11 @@ const Project = () => {
         </div>
         <hr className="" />
         <div className="my-5">
-          <Right_Picture_Article {...article3} />
-        </div>
-        <hr className="" />
-        <div className="my-5">
           <Left_Picture_List {...list1} />
         </div>
         <hr className="" />
         <div className="my-5">
-          <Right_Picture_List {...list1} />
+          <Right_Picture_List {...list2} />
         </div>
       </div>
     </>

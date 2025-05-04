@@ -70,7 +70,7 @@ const Home = () => {
         <Carousel picture={pictures} />
       </div>
       <div className="bg-white my-5">
-        <h2 className="text-end gray font-5 fw-semibold me-1">
+        <h2 className="text-end gray font-5 fw-semibold me-3">
           <span className="green">All</span>-in one services from one{" "}
           <span className="green">provider</span>
         </h2>
