@@ -3,7 +3,6 @@ import Title from "../../Components/Title/Title"
 import Subtitle from "../../Components/Subtitle/Subtitle"
 import Subtitled_Article from "../../Components/Subtitled_Article/Subtitled_Article"
 
-
 const title = "Mobilní"
 
 const subtitle_1 = "Dodací podmínky"

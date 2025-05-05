@@ -11,7 +11,9 @@ import Cogeneration from "./Pages/Cogeneration/Cogeneration"
 import Project from "./Pages/Project/Project"
 import Mobile_Water from "./Pages/Mobile_Water/Mobile_Water"
 import Mobile_Steam from "./Pages/Mobile_Steam/Mobile_Steam"
-import Production from "./Pages/Production/Production"
+// import Production from "./Pages/Production/Production"
+import Delivery_Conditions from "./Pages/Delivery_Conditions/Delivery_Conditions"
+import Rental_Conditions from "./Pages/Rental_Conditions/Rental_Conditions"
 import Monitoring from "./Pages/Monitoring/Monitoring"
 import Contacts from "./Pages/Contacts/Contacts"
 import Try from "./Pages/Try/Try"
@@ -34,7 +36,12 @@ const App = () => {
             <Route path="/project" element={<Project />} />
             <Route path="/mobile-water" element={<Mobile_Water />} />
             <Route path="/mobile-steam" element={<Mobile_Steam />} />
-            <Route path="/production" element={<Production />} />
+            {/* <Route path="/production" element={<Production />} /> */}
+            <Route
+              path="/delivery-conditions"
+              element={<Delivery_Conditions />}
+            />
+            <Route path="/rental-conditions" element={<Rental_Conditions />} />
             <Route path="/monitoring" element={<Monitoring />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/try" element={<Try />} />

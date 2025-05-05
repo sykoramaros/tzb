@@ -6,12 +6,16 @@ import Linked_Tertiary_Heading from "../../Components/Linked_Tertiary_Heading/Li
 import Subtitled_Article from "../../Components/Subtitled_Article/Subtitled_Article"
 import Tertiary_Heading from "../../Components/Tertiary_Heading/Tertiary_Heading"
 
-const Mobile = () => {
+const Mobile_Water = () => {
   const title = "Mobilní"
   const subtitle_1 = "Teplovodní"
-  const linked_tertiary_heading = {
-    title: "Výroba",
-    link: "/production",
+  const linked_tertiary_delivery_heading = {
+    title: "Dodání",
+    link: "/delivery-conditions",
+  }
+  const linked_tertiary_rental_heading = {
+    title: "Pronájem",
+    link: "/rental-conditions",
   }
   const subtitle_standart = "Standart"
   const subtitle_delivery = "Dodávka"
@@ -30,29 +34,9 @@ const Mobile = () => {
   const extra_subtitle_chimney = "Komín"
 
   const pictures = [
-    // {
-    //   src: `https://placehold.co/600x400`,
-    //   text: "Výroba a pronájem mobilních kotelen",
-    // },
-    // {
-    //   src: `https://placehold.co/600x400@2x.png`,
-    //   text: "TND kotelna",
-    // },
-    // {
-    //   src: `${process.env.PUBLIC_URL}/img/realizace_ref_1.png`,
-    //   text: "Výměník",
-    // },
     {
       src: `${process.env.PUBLIC_URL}/img/mobile_boiler_b_1920_1080.jpg`,
       text: "TEPLOVODNÍ KOTELNA 655 KW",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/mobile_boiler_d_1920_1080.jpg`,
-      text: "PARNÍ KOTELNA 1 300 KW",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/mobile_boiler_m_1920_1080.jpg`,
-      text: "PARNÍ KOTELNA 1 200 KW",
     },
     {
       src: `${process.env.PUBLIC_URL}/img/mobile_boiler_e_1920_1080.jpg`,
@@ -65,10 +49,6 @@ const Mobile = () => {
     {
       src: `${process.env.PUBLIC_URL}/img/mobile_boiler_f_1920_1080.jpg`,
       text: "TEPLOVODNÍ KOTELNA 1 200 KW – 2 ks",
-    },
-    {
-      src: `${process.env.PUBLIC_URL}/img/mobile_boiler_h_1920_1080.jpg`,
-      text: "PARNÍ KOTELNA 1 300 KW",
     },
     {
       src: `${process.env.PUBLIC_URL}/img/mobile_boiler_c_1920_1080.jpg`,
@@ -366,219 +346,227 @@ const Mobile = () => {
       </div>
       <div className="pt-2 pb-5">
         <Linked_Tertiary_Heading
-          title={linked_tertiary_heading.title}
-          link={linked_tertiary_heading.link}
+          title={linked_tertiary_delivery_heading.title}
+          link={linked_tertiary_delivery_heading.link}
         />
       </div>
+      <div className="container">
+        <div className="mx-5 mt-4">
+          {base_info.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
 
-      <div className="mx-5 mt-4">
-        {base_info.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
+        <div className="pb-1">
+          <Subtitle subtitle={subtitle_standart} />
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={subtitle_delivery} />
+        </div>
+
+        <div className="mx-5 mt-4">
+          {delivery.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={subtitle_heating_section} />
+        </div>
+
+        <div className="mx-5 mt-4">
+          {heating_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={subtitle_fuel_section} />
+        </div>
+
+        <div className="mx-5 mt-4">
+          {fuel_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={subtitle_water_section} />
+        </div>
+
+        <div className="mx-5 mt-4">
+          {water_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={subtitle_electrical_section} />
+        </div>
+
+        <div className="mx-5 mt-4">
+          {electrical_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={subtitle_container} />
+        </div>
+
+        <div className="mx-5 mt-4">
+          {container.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={subtitle_chimney} />
+        </div>
+
+        <div className="mx-5 mt-4">
+          {chimney.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="pb-1">
+          <Subtitle subtitle={subtitle_extra} />
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={extra_subtitle_heating_section} />
+        </div>
+        <div className="mx-5 mt-4">
+          {extra_heating_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={extra_subtitle_fuel_section} />
+        </div>
+        <div className="mx-5 mt-4">
+          {extra_fuel_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={extra_subtitle_water_section} />
+        </div>
+        <div className="mx-5 mt-4">
+          {extra_water_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={extra_subtitle_electrical_section} />
+        </div>
+        <div className="mx-5 mt-4">
+          {extra_electro_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={extra_subtitle_container} />
+        </div>
+        <div className="mx-5 mt-4">
+          {extra_container_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={extra_subtitle_chimney} />
+        </div>
+        <div className="mx-5 mt-4">
+          {extra_chimney_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="mx-4">
+          <Tertiary_Heading title={extra_subtitle_fuel_section} />
+        </div>
+        <div className="mx-5 mt-4">
+          {extra_fuel_storage_section.map((item, index) => (
+            <Subtitled_Article
+              key={index}
+              subtitle={item.subtitle}
+              article={item.article}
+            />
+          ))}
+        </div>
+
+        <div className="pt-2 pb-5">
+          <Linked_Tertiary_Heading
+            title={linked_tertiary_rental_heading.title}
+            link={linked_tertiary_rental_heading.link}
           />
-        ))}
-      </div>
-
-      <div className="pb-1">
-        <Subtitle subtitle={subtitle_standart} />
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={subtitle_delivery} />
-      </div>
-
-      <div className="mx-5 mt-4">
-        {delivery.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={subtitle_heating_section} />
-      </div>
-
-      <div className="mx-5 mt-4">
-        {heating_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={subtitle_fuel_section} />
-      </div>
-
-      <div className="mx-5 mt-4">
-        {fuel_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={subtitle_water_section} />
-      </div>
-
-      <div className="mx-5 mt-4">
-        {water_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={subtitle_electrical_section} />
-      </div>
-
-      <div className="mx-5 mt-4">
-        {electrical_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={subtitle_container} />
-      </div>
-
-      <div className="mx-5 mt-4">
-        {container.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={subtitle_chimney} />
-      </div>
-
-      <div className="mx-5 mt-4">
-        {chimney.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="pb-1">
-        <Subtitle subtitle={subtitle_extra} />
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={extra_subtitle_heating_section} />
-      </div>
-      <div className="mx-5 mt-4">
-        {extra_heating_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={extra_subtitle_fuel_section} />
-      </div>
-      <div className="mx-5 mt-4">
-        {extra_fuel_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={extra_subtitle_water_section} />
-      </div>
-      <div className="mx-5 mt-4">
-        {extra_water_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={extra_subtitle_electrical_section} />
-      </div>
-      <div className="mx-5 mt-4">
-        {extra_electro_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={extra_subtitle_container} />
-      </div>
-      <div className="mx-5 mt-4">
-        {extra_container_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={extra_subtitle_chimney} />
-      </div>
-      <div className="mx-5 mt-4">
-        {extra_chimney_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
-      </div>
-
-      <div className="mx-4">
-        <Tertiary_Heading title={extra_subtitle_fuel_section} />
-      </div>
-      <div className="mx-5 mt-4">
-        {extra_fuel_storage_section.map((item, index) => (
-          <Subtitled_Article
-            key={index}
-            subtitle={item.subtitle}
-            article={item.article}
-          />
-        ))}
+        </div>
       </div>
     </>
   )
 }
 
-export default Mobile
+export default Mobile_Water

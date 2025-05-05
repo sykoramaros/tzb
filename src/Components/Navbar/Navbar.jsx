@@ -115,12 +115,28 @@ const Navbar = () => {
                 </Link>
               </li>
               <hr className="dropdown-divider" />
-              <li>
+              {/* <li>
                 <Link
                   className="dropdown-item fw-medium green"
                   to="/production"
                 >
                   Výroba
+                </Link>
+              </li> */}
+              <li>
+                <Link
+                  className="dropdown-item fw-medium green"
+                  to="/delivery-conditions"
+                >
+                  Dodání
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="dropdown-item fw-medium green"
+                  to="/rental-conditions"
+                >
+                  Pronájem
                 </Link>
               </li>
             </ul>
