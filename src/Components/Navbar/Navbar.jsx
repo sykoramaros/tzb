@@ -117,7 +117,7 @@ const Navbar = () => {
               <hr className="dropdown-divider" />
               <li>
                 <Link
-                  className="dropdown-item fw-medium  green"
+                  className="dropdown-item fw-medium green"
                   to="/production"
                 >
                   Výroba

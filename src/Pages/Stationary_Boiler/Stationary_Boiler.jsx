@@ -8,7 +8,10 @@ import Text_Box from "../../Components/Text_Box/Text_Box"
 const Stationary_Boiler = () => {
   const title = "Statické"
   const subtitle = "Kotelny"
-  const linked_tertiary_heading = "Projekce"
+  const linked_tertiary_heading = {
+    title: "Projekce",
+    link: "/project",
+  }
 
   const pictures = [
     // {
@@ -50,9 +53,10 @@ const Stationary_Boiler = () => {
       >
         <Carousel picture={pictures} />
       </div>
-      <div className="pt-3 pb-4">
+      <div className="pt-3 pb-5">
         <Linked_Tertiary_Heading
-          linked_tertiary_heading={linked_tertiary_heading}
+          title={linked_tertiary_heading.title}
+          link={linked_tertiary_heading.link}
         />
       </div>
       <div className="">

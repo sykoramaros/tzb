@@ -8,7 +8,10 @@ import Text_Box from "../../Components/Text_Box/Text_Box"
 const Stationary_Heat_Exchanger_Station = () => {
   const title = "Statické"
   const subtitle = "Výměnikové stanice"
-  const linked_tertiary_heading = "Projekce"
+  const linked_tertiary_heading = {
+    title: "Projekce",
+    link: "/project",
+  }
 
   const pictures = [
     // {
@@ -53,7 +56,8 @@ const Stationary_Heat_Exchanger_Station = () => {
 
       <div className="pt-3 pb-5">
         <Linked_Tertiary_Heading
-          linked_tertiary_heading={linked_tertiary_heading}
+          title={linked_tertiary_heading.title}
+          link={linked_tertiary_heading.link}
         />
       </div>
 

@@ -3,7 +3,6 @@ import Title from "../../Components/Title/Title"
 import Subtitle from "../../Components/Subtitle/Subtitle"
 import Subtitled_Article from "../../Components/Subtitled_Article/Subtitled_Article"
 
-
 const title = "Mobilní"
 
 const subtitle_1 = "Dodací podmínky"
@@ -87,7 +86,7 @@ const schedule = [
   },
 ]
 
-const Production = () => {
+const Delivery_Conditions = () => {
   return (
     <>
       <div className="">
@@ -160,4 +159,4 @@ const Production = () => {
   )
 }
 
-export default Production
+export default Delivery_Conditions
