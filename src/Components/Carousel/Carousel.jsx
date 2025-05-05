@@ -13,16 +13,16 @@ const Carousel = ({ picture }) => {
           data-bs-ride="carousel"
         >
           <div className="carousel-inner">
-            {picture.map((pic, index) => (
+            {picture.map((item, index) => (
               <div
                 className={`carousel-item ${index === 0 ? "active" : ""}`}
                 key={index}
               >
-                <span className="ms-2 mt-1 me-2 px-2 bg-white text-black bg-opacity-75 fs-2 fw-medium rounded-1 position-absolute top-0 start-0 z-1">
-                  {pic.text}
+                <span className="carousel-text ms-2 mt-1 me-2 px-2 text-white fs-2 fw-medium rounded-1 position-absolute top-0 start-0 z-1">
+                  {item.text}
                 </span>
                 <div className="d-flex justify-content-center align-items-center">
-                  <img src={pic.src} className="carousel-img" alt={pic.alt} />
+                  <img src={item.src} className="carousel-img" alt={item.alt} />
                 </div>
               </div>
             ))}
@@ -50,7 +50,7 @@ const Carousel = ({ picture }) => {
             ></span>
           </button>
           <div className="carousel-indicators">
-            {slider.map((sld, index) => (
+            {slider.map((item, index) => (
               <button
                 key={index}
                 type="button"

@@ -16,6 +16,7 @@ import Delivery_Conditions from "./Pages/Delivery_Conditions/Delivery_Conditions
 import Rental_Conditions from "./Pages/Rental_Conditions/Rental_Conditions"
 import Monitoring from "./Pages/Monitoring/Monitoring"
 import Contacts from "./Pages/Contacts/Contacts"
+import Data_Protections from "./Pages/Data_Protections/Data_Protections"
 import Try from "./Pages/Try/Try"
 import "./App.css"
 
@@ -44,6 +45,7 @@ const App = () => {
             <Route path="/rental-conditions" element={<Rental_Conditions />} />
             <Route path="/monitoring" element={<Monitoring />} />
             <Route path="/contacts" element={<Contacts />} />
+            <Route path="/data-protections" element={<Data_Protections />} />
             <Route path="/try" element={<Try />} />
           </Route>
         </Routes>

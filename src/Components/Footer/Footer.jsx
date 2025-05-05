@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="footer-container row p-4">
           <div className="d-block d-sm-none col-sm-12 d-flex justify-content-center align-items-center mb-3">
             <Link
-              to="/try"
+              to="/contacts"
               className="text-white text-center d-block text-decoration-none fs-1 bg-green py-2 px-3"
             >
               Contact Us
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
           <div className="d-none d-sm-block col-sm-4 d-flex justify-content-center align-items-center">
             <Link
-              to="/try"
+              to="/contacts"
               className="text-white text-center d-block text-decoration-none bg-green p-2 rounded-1 fs-1"
             >
               Contact Us
@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="col-6 col-sm-4 d-flex justify-content-center align-items-center">
             <div className="d-flex flex-column justify-content-center py-1 gray rounded-1 fs-5 h-100">
               <Link
-                to="/try"
+                to="/data-protections"
                 className="text-start green mb-0 text-decoration-none"
               >
                 Data Protections

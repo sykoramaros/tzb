@@ -58,11 +58,14 @@
   text-decoration: none;
 }
 
-.navbar-item {
+.navbar-item,
+.nav-link {
   transition: all 0.3s ease-in-out;
+  text-shadow: 2px 2px 5px #0000007f;
 }
 
-.navbar-item:hover {
+.navbar-item:hover,
+.nav-link:hover {
   /* transform: scale(1.618); */
   transform: scale(1.1);
 }
