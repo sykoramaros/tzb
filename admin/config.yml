@@ -6,6 +6,9 @@ backend:
   base_url: https://api.netlify.com # https://your-github-pages-url.com URL vašeho GitHub Pages webu
   auth_endpoint: api/auth # Endpoint pro OAuth
 
+local_backend: true
+public_path: "/tzb/admin/"
+
 # Kde se budou ukládat média
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
