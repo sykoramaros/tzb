@@ -4,19 +4,19 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 import Layout from "./Components/Layout/Layout"
 import Home from "./Pages/Home/Home"
-import Stationary_Boiler from "./Pages/Stationary_Boiler/Stationary_Boiler"
-import Stationary_Heat_Exchanger_Station from "./Pages/Stationary_Heat_Exchanger_Station/Stationary_Heat_Exchanger_Station"
-import Air_Handling from "./Pages/Air_Handling/Air_Handling"
+import StationaryBoiler from "./Pages/StationaryBoiler/StationaryBoiler"
+import StationaryHeatExchangerStation from "./Pages/StationaryHeatExchangerStation/StationaryHeatExchangerStation"
+import AirHandling from "./Pages/AirHandling/AirHandling"
 import Cogeneration from "./Pages/Cogeneration/Cogeneration"
 import Project from "./Pages/Project/Project"
-import Mobile_Water from "./Pages/Mobile_Water/Mobile_Water"
-import Mobile_Steam from "./Pages/Mobile_Steam/Mobile_Steam"
+import MobileWater from "./Pages/MobileWater/MobileWater"
+import MobileSteam from "./Pages/MobileSteam/MobileSteam"
 // import Production from "./Pages/Production/Production"
-import Delivery_Conditions from "./Pages/Delivery_Conditions/Delivery_Conditions"
-import Rental_Conditions from "./Pages/Rental_Conditions/Rental_Conditions"
+import DeliveryConditions from "./Pages/DeliveryConditions/DeliveryConditions"
+import RentalConditions from "./Pages/RentalConditions/RentalConditions"
 import Monitoring from "./Pages/Monitoring/Monitoring"
 import Contacts from "./Pages/Contacts/Contacts"
-import Data_Protections from "./Pages/Data_Protections/Data_Protections"
+import DataProtections from "./Pages/DataProtections/DataProtections"
 import Try from "./Pages/Try/Try"
 import "./App.css"
 
@@ -27,25 +27,25 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="/stationary-boiler" element={<Stationary_Boiler />} />
+            <Route path="/stationary-boiler" element={<StationaryBoiler />} />
             <Route
               path="/stationary-heat-exchanger-station"
-              element={<Stationary_Heat_Exchanger_Station />}
+              element={<StationaryHeatExchangerStation />}
             />
-            <Route path="/air-handling" element={<Air_Handling />} />
+            <Route path="/air-handling" element={<AirHandling />} />
             <Route path="/cogeneration" element={<Cogeneration />} />
             <Route path="/project" element={<Project />} />
-            <Route path="/mobile-water" element={<Mobile_Water />} />
-            <Route path="/mobile-steam" element={<Mobile_Steam />} />
+            <Route path="/mobile-water" element={<MobileWater />} />
+            <Route path="/mobile-steam" element={<MobileSteam />} />
             {/* <Route path="/production" element={<Production />} /> */}
             <Route
               path="/delivery-conditions"
-              element={<Delivery_Conditions />}
+              element={<DeliveryConditions />}
             />
-            <Route path="/rental-conditions" element={<Rental_Conditions />} />
+            <Route path="/rental-conditions" element={<RentalConditions />} />
             <Route path="/monitoring" element={<Monitoring />} />
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/data-protections" element={<Data_Protections />} />
+            <Route path="/data-protections" element={<DataProtections />} />
             <Route path="/try" element={<Try />} />
           </Route>
         </Routes>

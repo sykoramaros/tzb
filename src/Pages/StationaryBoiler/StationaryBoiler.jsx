@@ -5,9 +5,9 @@ import Carousel from "../../Components/Carousel/Carousel"
 import LinkedTertiaryHeading from "../../Components/LinkedTertiaryHeading/LinkedTertiaryHeading"
 import TextBox from "../../Components/TextBox/TextBox"
 
-const Cogeneration = () => {
+const StationaryBoiler = () => {
   const title = "Statické"
-  const subtitle = "Kogenerace"
+  const subtitle = "Kotelny"
   const linked_tertiary_heading = {
     title: "Projekce",
     link: "/project",
@@ -27,17 +27,17 @@ const Cogeneration = () => {
     //   text: "Výměník",
     // },
     {
-      src: `${process.env.PUBLIC_URL}/img/cogeneration_unit_1920_1080.jpg`,
-      text: "KOGENERAČNÍ JEDNOTKA - TYLEX Letovice ",
+      src: `${process.env.PUBLIC_URL}/img/gas_boiler_1920_1080.jpg`,
+      text: "PLYNOVÁ PARNÍ KOTELNA PRO MLÉKÁRNU",
     },
     {
-      src: `${process.env.PUBLIC_URL}/img/cogeneration_unit_b_1920_1080.jpg`,
-      text: "MIKRO – KOGENERAČNÍ JEDNOTKA SMO městská a.s.",
+      src: `${process.env.PUBLIC_URL}/img/monitoring_a_1920_1080.jpg`,
+      text: "PLYNOVÁ TV KOTELNA PRO VYTÁPĚNÍ",
     },
   ]
 
   const text =
-    "Zajišťujeme řešení pro kogeneraci – kombinovanou výrobu elektřiny a tepla, která umožňuje efektivní využití paliva a snížení energetických nákladů. Tento způsob výroby je ideální pro objekty s trvalou spotřebou tepla a přispívá k energetické soběstačnosti a ekologickému provozu."
+    "Navrhujeme a realizujeme kotelny různých typů podle potřeb zákazníka – parní, horkovodní, teplovodní i termoolejové. Zaměřujeme se na efektivní provoz, bezpečnost a optimalizaci energetických nákladů."
 
   return (
     <>
@@ -66,4 +66,4 @@ const Cogeneration = () => {
   )
 }
 
-export default Cogeneration
+export default StationaryBoiler

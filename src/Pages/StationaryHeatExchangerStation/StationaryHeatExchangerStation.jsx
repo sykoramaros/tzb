@@ -5,9 +5,9 @@ import Carousel from "../../Components/Carousel/Carousel"
 import LinkedTertiaryHeading from "../../Components/LinkedTertiaryHeading/LinkedTertiaryHeading"
 import TextBox from "../../Components/TextBox/TextBox"
 
-const Cogeneration = () => {
+const StationaryHeatExchangerStation = () => {
   const title = "Statické"
-  const subtitle = "Kogenerace"
+  const subtitle = "Výměnikové stanice"
   const linked_tertiary_heading = {
     title: "Projekce",
     link: "/project",
@@ -27,17 +27,17 @@ const Cogeneration = () => {
     //   text: "Výměník",
     // },
     {
-      src: `${process.env.PUBLIC_URL}/img/cogeneration_unit_1920_1080.jpg`,
-      text: "KOGENERAČNÍ JEDNOTKA - TYLEX Letovice ",
+      src: `${process.env.PUBLIC_URL}/img/exchanger_1920_1080.jpg`,
+      text: "ROZVODY TEPLA PRO VYTÁPĚNÍ A TUV",
     },
     {
-      src: `${process.env.PUBLIC_URL}/img/cogeneration_unit_b_1920_1080.jpg`,
-      text: "MIKRO – KOGENERAČNÍ JEDNOTKA SMO městská a.s.",
+      src: `${process.env.PUBLIC_URL}/img/exchanger_b_1920_1080.jpg`,
+      text: "TV VÝMĚNÍKOVÁ STANICE PRO TG OHŘEV",
     },
   ]
 
   const text =
-    "Zajišťujeme řešení pro kogeneraci – kombinovanou výrobu elektřiny a tepla, která umožňuje efektivní využití paliva a snížení energetických nákladů. Tento způsob výroby je ideální pro objekty s trvalou spotřebou tepla a přispívá k energetické soběstačnosti a ekologickému provozu."
+    "Navrhujeme a realizujeme výměníkové stanice pro parní, horkovodní i teplovodní systémy, které slouží k efektivnímu přenosu tepla z centrálních zdrojů do lokálních topných a technologických rozvodů. Díky přesnému řízení a moderním technologiím zajišťují spolehlivý provoz a úsporné hospodaření s energií."
 
   return (
     <>
@@ -53,12 +53,14 @@ const Cogeneration = () => {
       >
         <Carousel picture={pictures} />
       </div>
+
       <div className="pt-3 pb-5">
         <LinkedTertiaryHeading
           title={linked_tertiary_heading.title}
           link={linked_tertiary_heading.link}
         />
       </div>
+
       <div className="">
         <TextBox text={text} />
       </div>
@@ -66,4 +68,4 @@ const Cogeneration = () => {
   )
 }
 
-export default Cogeneration
+export default StationaryHeatExchangerStation

@@ -6,7 +6,7 @@ const Carousel = ({ picture }) => {
 
   return (
     <>
-      <div className="carousel-container">
+      <div className="carousel-container border-top border-bottom border-1 border-secondary">
         <div
           id="carouselExampleAutoplaying"
           className="carousel slide"

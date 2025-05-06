@@ -18,7 +18,7 @@ const Navbar = () => {
               className=""
               src={`${process.env.PUBLIC_URL}/img/logo.png`}
               alt="TZB Orlová"
-              width="110"
+              width="135"
               height="auto"
             />
           </Link>

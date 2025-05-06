@@ -1,8 +1,8 @@
 import React from "react"
 import Title from "../../Components/Title/Title"
 import Subtitle from "../../Components/Subtitle/Subtitle"
-import Right_Picture_Article from "../../Components/Right_Picture_Article/Right_Picture_Article"
-import Left_Picture_Article from "../../Components/Left_Picture_Article/Left_Picture_Article"
+import RightPictureArticle from "../../Components/RightPictureArticle/RightPictureArticle"
+import LeftPictureArticle from "../../Components/LeftPictureArticle/LeftPictureArticle"
 
 const Monitoring = () => {
   const title = "Monitoring"
@@ -44,19 +44,19 @@ const Monitoring = () => {
       </div>
       <div className="container px-3 my-5">
         <div className="my-5">
-          <Right_Picture_Article {...article1} />
+          <RightPictureArticle {...article1} />
         </div>
         <hr className="" />
         <div className="my-5">
-          <Left_Picture_Article {...article2} />
+          <LeftPictureArticle {...article2} />
         </div>
         <hr className="" />
         <div className="my-5">
-          <Right_Picture_Article {...article3} />
+          <RightPictureArticle {...article3} />
         </div>
         <hr className="" />
         <div className="my-5">
-          <Left_Picture_Article {...article4} />
+          <LeftPictureArticle {...article4} />
         </div>
       </div>
     </>

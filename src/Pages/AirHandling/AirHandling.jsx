@@ -5,9 +5,9 @@ import Carousel from "../../Components/Carousel/Carousel"
 import LinkedTertiaryHeading from "../../Components/LinkedTertiaryHeading/LinkedTertiaryHeading"
 import TextBox from "../../Components/TextBox/TextBox"
 
-const Cogeneration = () => {
+const AirHandling = () => {
   const title = "Statické"
-  const subtitle = "Kogenerace"
+  const subtitle = "Vzduchotechnika"
   const linked_tertiary_heading = {
     title: "Projekce",
     link: "/project",
@@ -27,17 +27,29 @@ const Cogeneration = () => {
     //   text: "Výměník",
     // },
     {
-      src: `${process.env.PUBLIC_URL}/img/cogeneration_unit_1920_1080.jpg`,
-      text: "KOGENERAČNÍ JEDNOTKA - TYLEX Letovice ",
+      src: `${process.env.PUBLIC_URL}/img/air_handling_1920_1080.jpg`,
+      text: "SUŠÁRNA MLÉKA",
     },
     {
-      src: `${process.env.PUBLIC_URL}/img/cogeneration_unit_b_1920_1080.jpg`,
-      text: "MIKRO – KOGENERAČNÍ JEDNOTKA SMO městská a.s.",
+      src: `${process.env.PUBLIC_URL}/img/air_handling_b_1920_1080.jpg`,
+      text: "VĚTRÁNÍ ELEKTRÁRNY LEDVICE",
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/img/air_handling_c_1920_1080.jpg`,
+      text: "SUŠÍCÍ PECE - TATRA METALURGIE",
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/img/air_handling_d_1920_1080.jpg`,
+      text: "VYPALOVACÍ PECE - TATRA TRUCKS",
+    },
+    {
+      src: `${process.env.PUBLIC_URL}/img/air_handling_e_1920_1080.jpg`,
+      text: "SUŠÍCÍ PECE - TATRA TRUCKS",
     },
   ]
 
   const text =
-    "Zajišťujeme řešení pro kogeneraci – kombinovanou výrobu elektřiny a tepla, která umožňuje efektivní využití paliva a snížení energetických nákladů. Tento způsob výroby je ideální pro objekty s trvalou spotřebou tepla a přispívá k energetické soběstačnosti a ekologickému provozu."
+    "Dodáváme a instalujeme vzduchotechnické jednotky včetně přímotopných, nepřímotopných a s rekuperací tepla, zajišťujeme kompletní potrubní rozvody pro efektivní distribuci vzduchu. Součástí našich služeb jsou také přímotopné rotační pece i pece s rekuperací, určené pro náročné provozy s důrazem na účinnost a úsporu energie."
 
   return (
     <>
@@ -53,6 +65,7 @@ const Cogeneration = () => {
       >
         <Carousel picture={pictures} />
       </div>
+
       <div className="pt-3 pb-5">
         <LinkedTertiaryHeading
           title={linked_tertiary_heading.title}
@@ -66,4 +79,4 @@ const Cogeneration = () => {
   )
 }
 
-export default Cogeneration
+export default AirHandling

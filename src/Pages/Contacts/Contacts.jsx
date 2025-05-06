@@ -1,7 +1,7 @@
 import React from "react"
 import "./Contacts.css"
 import Title from "../../Components/Title/Title"
-import Horizontal_Scrolling_Container from "../../Components/Horizontal_Scrolling_Container/Horizontal_Scrolling_Container"
+import HorizontalScrollingContainer from "../../Components/HorizontalScrollingContainer/HorizontalScrollingContainer"
 
 const Contacts = () => {
   const title = "Kontaktujte nás"
@@ -155,7 +155,7 @@ const Contacts = () => {
         >
           {contact_person.map((item, index) => (
             <div key={index} style={{ minWidth: "250px", marginRight: "1rem" }}>
-              <Horizontal_Scrolling_Container
+              <HorizontalScrollingContainer
                 title={item.name}
                 subheading={item.email}
                 info={item.phone}

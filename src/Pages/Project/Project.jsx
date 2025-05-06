@@ -1,10 +1,10 @@
 import React from "react"
 import Title from "../../Components/Title/Title"
 import Subtitle from "../../Components/Subtitle/Subtitle"
-import Left_Picture_Article from "../../Components/Left_Picture_Article/Left_Picture_Article"
-import Right_Picture_Article from "../../Components/Right_Picture_Article/Right_Picture_Article"
-import Left_Picture_List from "../../Components/Left_Picture_List/Left_Picture_List"
-import Right_Picture_List from "../../Components/Right_Picture_List/Right_Picture_List"
+import LeftPictureArticle from "../../Components/LeftPictureArticle/LeftPictureArticle"
+import RightPictureArticle from "../../Components/RightPictureArticle/RightPictureArticle"
+import LeftPictureList from "../../Components/LeftPictureList/LeftPictureList"
+import RightPictureList from "../../Components/RightPictureList/RightPictureList"
 
 const Project = () => {
   const title = "Statické"
@@ -91,19 +91,19 @@ const Project = () => {
       </div>
       <div className="container px-3 my-5">
         <div className="my-5">
-          <Right_Picture_Article {...article1} />
+          <RightPictureArticle {...article1} />
         </div>
         <hr className="" />
         <div className="my-5">
-          <Left_Picture_Article {...article2} />
+          <LeftPictureArticle {...article2} />
         </div>
         <hr className="" />
         <div className="my-5">
-          <Left_Picture_List {...list1} />
+          <LeftPictureList {...list1} />
         </div>
         <hr className="" />
         <div className="my-5">
-          <Right_Picture_List {...list2} />
+          <RightPictureList {...list2} />
         </div>
       </div>
     </>
