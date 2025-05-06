@@ -13,7 +13,7 @@ const HorizontalScrollingContainer = ({
         <img
           src={src}
           className="card-img-top w-75 mx-auto mt-4"
-          alt="picture"
+          alt="employee"
         />
         <div className="card-body">
           <h5 className="card-title text-center">{title}</h5>
