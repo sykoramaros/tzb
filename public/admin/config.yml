@@ -3,8 +3,8 @@ backend:
   name: github
   repo: sykoramaros/tzb # Nahraďte vaším uživatelským jménem a názvem repozitáře
   branch: main # Větev, kterou chcete spravovat
-  base_url: https://api.netlify.com # https://your-github-pages-url.com URL vašeho GitHub Pages webu
-  auth_endpoint: api/auth # Endpoint pro OAuth
+  base_url: https://api.netlify.com
+  auth_endpoint: auth # Endpoint pro OAuth
 
 local_backend: true
 public_path: "/tzb/admin/"
