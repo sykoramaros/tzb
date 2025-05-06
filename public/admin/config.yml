@@ -1,6 +1,6 @@
 backend:
   locale: cs
-  name: decap
+  name: github
   repo: sykoramaros/tzb # Nahraďte vaším uživatelským jménem a názvem repozitáře
   branch: main # Větev, kterou chcete spravovat
   base_url: https://api.netlify.com
