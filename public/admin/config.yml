@@ -1,13 +1,13 @@
 backend:
   locale: cs
-  name: github
+  name: decap
   repo: sykoramaros/tzb # Nahraďte vaším uživatelským jménem a názvem repozitáře
   branch: main # Větev, kterou chcete spravovat
   base_url: https://api.netlify.com
   auth_endpoint: auth # Endpoint pro OAuth
 
 local_backend: false
-public_path: "/tzb/admin/"
+public_path: "/admin/"
 
 # Kde se budou ukládat média
 media_folder: "public/images/uploads"
