@@ -7,6 +7,25 @@
     <meta name="theme-color" content="#4d8825" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/img/logo.png" />
     <!-- <meta http-equiv="refresh" content="0; URL=/tzb/admin/#/" /> -->
+    <script type="text/javascript">
+      // SPA routing na GitHub Pages
+      ;(function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&")
+            })
+            .join("?")
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          )
+        }
+      })(window.location)
+    </script>
     <title>TZB Orlová</title>
   </head>
   <body>

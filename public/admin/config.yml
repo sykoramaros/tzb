@@ -30,7 +30,8 @@ backend:
   repo: sykoramaros/tzb
   branch: main
   base_url: https://api.netlify.com
-  auth_endpoint: auth
+  auth_endpoint: auth?scope=repo # auth
+  site_domain: sykoramaros.github.io
 
 local_backend: false
 
