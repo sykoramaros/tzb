@@ -1,0 +1,24 @@
+backend:
+  locale: cs
+  name: github
+  repo: sykoramaros/tzb # Nahraďte vaším uživatelským jménem a názvem repozitáře
+  branch: main # Větev, kterou chcete spravovat
+  base_url: https://api.netlify.com # https://your-github-pages-url.com URL vašeho GitHub Pages webu
+  auth_endpoint: api/auth # Endpoint pro OAuth
+
+# Kde se budou ukládat média
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+# Definice kolekcí obsahu
+collections:
+  - name: "pages"
+    label: "TZB - web"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "TZB", name: "title", widget: "string" }
+      #- { label: "Datum publikace", name: "date", widget: "datetime" }
+      #- { label: "Popis", name: "description", widget: "text" }
+      - { label: "Obsah stránky", name: "body", widget: "markdown" }
