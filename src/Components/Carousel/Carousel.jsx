@@ -1,14 +1,15 @@
-import React from "react"
+import React, { useId } from "react"
 import "./Carousel.css"
 
 const Carousel = ({ picture }) => {
-  const slider = picture
+  const uid = useId()
+  const carouselId = `carousel-${uid.replace(/:/g, "")}`
 
   return (
     <>
       <div className="carousel-container border-top border-bottom border-1 border-secondary">
         <div
-          id="carouselExampleAutoplaying"
+          id={carouselId}
           className="carousel slide"
           data-bs-ride="carousel"
         >
@@ -30,31 +31,25 @@ const Carousel = ({ picture }) => {
           <button
             className="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-target={`#${carouselId}`}
             data-bs-slide="prev"
           >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           </button>
           <button
             className="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-target={`#${carouselId}`}
             data-bs-slide="next"
           >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
           </button>
           <div className="carousel-indicators">
-            {slider.map((item, index) => (
+            {picture.map((item, index) => (
               <button
                 key={index}
                 type="button"
-                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-target={`#${carouselId}`}
                 data-bs-slide-to={index}
                 className={index === 0 ? "active" : ""}
                 aria-current={index === 0 ? "true" : undefined}

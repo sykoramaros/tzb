@@ -6,7 +6,7 @@ import LeftPictureArticle from "../../Components/LeftPictureArticle/LeftPictureA
 
 const Monitoring = () => {
   const title = "Monitoring"
-  const subtitle = "Projekce"
+  const subtitle = "Monitoring a správa"
 
   const article1 = {
     header: "Vzdálená podpora",

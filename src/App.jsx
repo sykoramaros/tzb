@@ -17,7 +17,6 @@ import RentalConditions from "./Pages/RentalConditions/RentalConditions"
 import Monitoring from "./Pages/Monitoring/Monitoring"
 import Contacts from "./Pages/Contacts/Contacts"
 import DataProtections from "./Pages/DataProtections/DataProtections"
-import Try from "./Pages/Try/Try"
 import "./App.css"
 
 const App = () => {
@@ -46,7 +45,6 @@ const App = () => {
             <Route path="/monitoring" element={<Monitoring />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/data-protections" element={<DataProtections />} />
-            <Route path="/try" element={<Try />} />
           </Route>
         </Routes>
       </HashRouter>

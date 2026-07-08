@@ -65,9 +65,9 @@ const Home = () => {
         <br />
         <div className="container mt-5 px-4 px-sm-0">
           <div className="row row-cols-2 row-cols-md-3 g-5 py-5">
-            {partnerships.map((partnerships, index) => (
+            {partnerships.map((partner, index) => (
               <div key={index}>
-                <PartnershipCard partnership={partnerships} />
+                <PartnershipCard partnership={partner} />
               </div>
             ))}
           </div>

@@ -9,6 +9,10 @@ const Navbar = () => {
     setIsOpen(!isOpen)
   }
 
+  const closeMenu = () => {
+    setIsOpen(false)
+  }
+
   return (
     <>
       <nav className="navbar-container d-flex justify-content-evenly align-items-center w-100 py-2">
@@ -29,7 +33,7 @@ const Navbar = () => {
           } gap-3 gap-lg-4 my-auto d-md-flex fs-3`}
         >
           <li className="navbar-item  fw-medium my-auto">
-            <Link to="/" className="text-white">
+            <Link to="/" className="text-white" onClick={closeMenu}>
               Home
             </Link>
           </li>
@@ -49,6 +53,7 @@ const Navbar = () => {
                 <Link
                   className="dropdown-item fw-medium  gray"
                   to="/stationary-boiler"
+                  onClick={closeMenu}
                 >
                   Kotelny
                 </Link>
@@ -57,6 +62,7 @@ const Navbar = () => {
                 <Link
                   className="dropdown-item fw-medium  gray"
                   to="/stationary-heat-exchanger-station"
+                  onClick={closeMenu}
                 >
                   Výměníkové stanice
                 </Link>
@@ -65,6 +71,7 @@ const Navbar = () => {
                 <Link
                   className="dropdown-item fw-medium  gray"
                   to="/air-handling"
+                  onClick={closeMenu}
                 >
                   Vzduchotechnika
                 </Link>
@@ -74,13 +81,14 @@ const Navbar = () => {
                 <Link
                   className="dropdown-item fw-medium  gray"
                   to="/cogeneration"
+                  onClick={closeMenu}
                 >
                   Kogenerace
                 </Link>
               </li>
               <hr className="dropdown-divider" />
               <li>
-                <Link className="dropdown-item fw-medium  green" to="/project">
+                <Link className="dropdown-item fw-medium  green" to="/project" onClick={closeMenu}>
                   Projekce
                 </Link>
               </li>
@@ -102,6 +110,7 @@ const Navbar = () => {
                 <Link
                   className="dropdown-item fw-medium  gray"
                   to="/mobile-water"
+                  onClick={closeMenu}
                 >
                   Teplovodní
                 </Link>
@@ -110,6 +119,7 @@ const Navbar = () => {
                 <Link
                   className="dropdown-item fw-medium  gray"
                   to="/mobile-steam"
+                  onClick={closeMenu}
                 >
                   Parní
                 </Link>
@@ -127,6 +137,7 @@ const Navbar = () => {
                 <Link
                   className="dropdown-item fw-medium green"
                   to="/delivery-conditions"
+                  onClick={closeMenu}
                 >
                   Dodání
                 </Link>
@@ -135,6 +146,7 @@ const Navbar = () => {
                 <Link
                   className="dropdown-item fw-medium green"
                   to="/rental-conditions"
+                  onClick={closeMenu}
                 >
                   Pronájem
                 </Link>
@@ -143,13 +155,13 @@ const Navbar = () => {
           </li>
           <span className=" d-none d-lg-block  my-auto text-white">|</span>
           <li className="navbar-item  fw-medium my-auto">
-            <Link to="/monitoring" className="text-white">
+            <Link to="/monitoring" className="text-white" onClick={closeMenu}>
               Monitoring
             </Link>
           </li>
           <span className="d-none d-lg-block  my-auto text-white">|</span>
           <li className="navbar-item  fw-medium my-auto">
-            <Link to="/contacts" className="text-white">
+            <Link to="/contacts" className="text-white" onClick={closeMenu}>
               Kontakty
             </Link>
           </li>
