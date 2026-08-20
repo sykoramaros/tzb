@@ -88,7 +88,11 @@ const Navbar = () => {
               </li>
               <hr className="dropdown-divider" />
               <li>
-                <Link className="dropdown-item fw-medium  green" to="/project" onClick={closeMenu}>
+                <Link
+                  className="dropdown-item fw-medium  green"
+                  to="/project"
+                  onClick={closeMenu}
+                >
                   Projekce
                 </Link>
               </li>

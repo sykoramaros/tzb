@@ -8,11 +8,7 @@ const Carousel = ({ picture }) => {
   return (
     <>
       <div className="carousel-container border-top border-bottom border-1 border-secondary">
-        <div
-          id={carouselId}
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
+        <div id={carouselId} className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             {picture.map((item, index) => (
               <div
@@ -34,7 +30,10 @@ const Carousel = ({ picture }) => {
             data-bs-target={`#${carouselId}`}
             data-bs-slide="prev"
           >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
           </button>
           <button
             className="carousel-control-next"
@@ -42,7 +41,10 @@ const Carousel = ({ picture }) => {
             data-bs-target={`#${carouselId}`}
             data-bs-slide="next"
           >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
           </button>
           <div className="carousel-indicators">
             {picture.map((item, index) => (

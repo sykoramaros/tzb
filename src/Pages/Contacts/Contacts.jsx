@@ -117,7 +117,10 @@ const Contacts = () => {
                     className="form-control"
                     id="inputGroupFile02"
                   />
-                  <label className="input-group-text" htmlFor="inputGroupFile02">
+                  <label
+                    className="input-group-text"
+                    htmlFor="inputGroupFile02"
+                  >
                     Nahrát
                   </label>
                 </div>
@@ -132,7 +135,10 @@ const Contacts = () => {
                     Zavolejte mi prosím
                   </label>
                 </div>
-                <button type="submit" className="btn text-white bg-green btn-lg">
+                <button
+                  type="submit"
+                  className="btn text-white bg-green btn-lg"
+                >
                   Poslat
                 </button>
               </div>

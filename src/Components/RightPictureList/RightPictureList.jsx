@@ -5,7 +5,9 @@ const RightPictureList = ({ header, list, src }) => {
     <>
       <div className="row row-cols-1 row-cols-sm-2">
         <div className="d-flex flex-column justify-content-center gap-2 px-5">
-          <h3 className="fs-2 fw-medium text-center text-sm-start mb-4">{header}</h3>
+          <h3 className="fs-2 fw-medium text-center text-sm-start mb-4">
+            {header}
+          </h3>
           <ul className="">
             {list.map((ls, index) => (
               <li key={index}>

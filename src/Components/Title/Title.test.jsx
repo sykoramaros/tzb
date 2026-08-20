@@ -6,7 +6,9 @@ import Title from "./Title"
 describe("Title", () => {
   it("renders the title text", () => {
     render(<Title title="Testovací nadpis" />)
-    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Testovací nadpis")
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+      "Testovací nadpis",
+    )
   })
 
   it("renders hr separator", () => {
