@@ -7,6 +7,12 @@ on:
     branches: [main]
 
 jobs:
+  workflows:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: raven-actions/actionlint@v2
+
   checks:
     runs-on: ubuntu-latest
     steps:
